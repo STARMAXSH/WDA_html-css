@@ -1,19 +1,16 @@
-/* --- VARIABEL TEMA --- */
 :root {
-    --primary: #F05454; /* Merah cerah untuk menggugah selera (Makanan) */
+    --primary: #F05454;
     --primary-hover: #D94343;
-    --secondary: #30475E; /* Biru tua elegan untuk kontras (Minuman) */
+    --secondary: #30475E;
     --bg-white: #FFFFFF;
-    --bg-light: #F4F6F8; /* Abu-abu kebiruan sangat muda untuk latar minuman */
+    --bg-light: #F4F6F8;
     --text-dark: #222831;
     --text-gray: #596275;
-    
     --radius-card: 20px;
     --radius-btn: 100px;
     --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* --- RESET --- */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +36,6 @@ a {
     padding: 0 24px;
 }
 
-/* --- NAVBAR --- */
 .navbar {
     padding: 20px 0;
     position: sticky;
@@ -82,7 +78,6 @@ a {
     color: var(--primary);
 }
 
-/* --- HERO SECTION --- */
 .hero {
     display: flex;
     align-items: center;
@@ -92,8 +87,13 @@ a {
     padding-bottom: 60px;
 }
 
-.hero-text { flex: 1; }
-.hero-image { flex: 1; }
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
 
 .badge {
     display: inline-block;
@@ -127,7 +127,6 @@ a {
     gap: 15px;
 }
 
-/* TOMBOL */
 .btn-primary, .btn-secondary {
     padding: 14px 28px;
     border-radius: var(--radius-btn);
@@ -165,13 +164,12 @@ a {
     object-fit: cover;
 }
 
-/* --- SECTION MENU UMUM --- */
 .menu-section {
     padding: 80px 0;
 }
 
 .bg-light {
-    background-color: var(--bg-light); /* Latar berbeda untuk kategori minuman */
+    background-color: var(--bg-light);
 }
 
 .section-title {
@@ -197,7 +195,6 @@ a {
     gap: 30px;
 }
 
-/* --- KARTU MENU --- */
 .card {
     background-color: var(--bg-white);
     border-radius: var(--radius-card);
@@ -233,7 +230,7 @@ a {
     font-size: 14px;
     color: var(--text-gray);
     margin-bottom: 24px;
-    height: 45px; /* Biar tinggi teks sejajar */
+    height: 45px;
 }
 
 .card-bottom {
@@ -263,7 +260,6 @@ a {
     background-color: #1a2a3a;
 }
 
-/* --- FOOTER --- */
 footer {
     background-color: var(--secondary);
     color: var(--bg-white);
@@ -283,23 +279,26 @@ footer {
     margin-bottom: 5px;
 }
 
-/* --- RESPONSIVE / LAYAR HP --- */
 @media (max-width: 768px) {
     .hero {
-        flex-direction: column; /* Gambar dan teks ditumpuk vertikal di HP */
+        flex-direction: column;
         text-align: center;
         gap: 30px;
         padding-top: 20px;
     }
+    
     .hero p {
         margin: 0 auto 30px auto;
     }
+    
     .hero-buttons {
         justify-content: center;
     }
+    
     .nav-links {
-        display: none; /* Sembunyikan menu link di HP biar rapi */
+        display: none;
     }
+    
     .hero h1 {
         font-size: 42px;
     }
